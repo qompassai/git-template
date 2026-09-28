@@ -1,0 +1,5 @@
+# Normalize line endings; mark generated files.
+# Docs: https://git-scm.com/docs/gitattributes
+* text=auto
+*.png binary
+*.pdf binary
