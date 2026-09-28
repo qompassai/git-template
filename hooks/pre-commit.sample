@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Sample pre-commit hook: copy to .git/hooks/pre-commit and chmod +x.
+# Docs: https://git-scm.com/docs/githooks
+set -euo pipefail
+# fail on trailing whitespace
+if git diff --cached --check --; then
+  echo "pre-commit: whitespace clean"
+fi
